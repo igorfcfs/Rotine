@@ -41,7 +41,7 @@ h2 {
 
 p {
     font-family: "Poppins", sans-serif;
-}x  
+}  
 
 /* navbar */
 nav, #topbar {
@@ -216,67 +216,13 @@ span {
     -webkit-transform: translate3d(0, 0, -1em);
     transform: translate3d(0, 0, -1em);
    }
-  
-/* btn-começar */
-.btn-start {
-  width: 90%;
-  background: #00A789;
-  color: white;
-  font-family: 'Open Sans';
-  padding: 0.1em 0.35em;
-  padding-left: 1.2em;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 1em;
-  border: none;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em #6CABA0;
-  overflow: hidden;
-  position: relative;
-  justify-content: center;
-  height: 2.8em;
-  padding-right: 3.3em;
-  cursor: pointer;
-}
 
-.btn-start .icon {
-  background: white;
-  margin-left: 1em;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.2em;
-  width: 2.2em;
-  border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #00A789;
-  right: 0.3em;
-  transition: all 0.3s;
-}
 
-.btn-start:hover .icon {
-  width: calc(100% - 0.6em);
-}
-
-.btn-start .icon svg {
-  width: 1.1em;
-  transition: transform 0.3s;
-  color: #00A789;
-}
-
-.btn-start:hover .icon svg {
-  transform: translateX(0.1em);
-}
-
-.btn-start:active .icon {
-  transform: scale(0.95);
-}
-
+/* Pagina index inteira */
 .landing-page    {
     place-content: center flex-start;
     align-items: center;
+    justify-content: center;
     display: flex;
     flex: 0 0 auto;
     flex-flow: column;
@@ -287,6 +233,64 @@ span {
     position: relative;
     width: auto;
 }
+/* Apresentação */
+    /* btn-começar */
+    .btn-start {
+        width: 90%;
+        background: #00A789;
+        color: white;
+        font-family: 'Open Sans';
+        padding: 0.1em 0.35em;
+        padding-left: 1.2em;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 1em;
+        border: none;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        box-shadow: inset 0 0 1.6em -0.6em #6CABA0;
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+        height: 2.8em;
+        padding-right: 3.3em;
+        cursor: pointer;
+      }
+      
+      .btn-start .icon {
+        background: white;
+        margin-left: 1em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.2em;
+        width: 2.2em;
+        border-radius: 0.7em;
+        box-shadow: 0.1em 0.1em 0.6em 0.2em #00A789;
+        right: 0.3em;
+        transition: all 0.3s;
+      }
+      
+      .btn-start:hover .icon {
+        width: calc(100% - 0.6em);
+      }
+      
+      .btn-start .icon svg {
+        width: 1.1em;
+        transition: transform 0.3s;
+        color: #00A789;
+      }
+      
+      .btn-start:hover .icon svg {
+        transform: translateX(0.1em);
+      }
+      
+      .btn-start:active .icon {
+        transform: scale(0.95);
+      }
+
 .apresentation {
     display: flex;
     align-items: flex-start;
@@ -342,7 +346,7 @@ span {
     font-size: 60px;
     font-style: normal;
     font-weight: 700;
-    line-height: 86.086px; /* 130.303% */
+    line-height: 86.086px; 
     }
 
 .items-function {
@@ -534,4 +538,93 @@ footer p {
     border: 0;
     border-radius: 20px;
     background: none;
+}
+
+/* Página Artigos */
+#section-artigos {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    gap: 40px;
+    align-items: center;
+}
+
+
+.tipos-artigos .todos-artigos {
+    border-radius: 24.695px;
+    background: #00A789;
+    color: #E2F0DB;
+    padding: 0px 20px;
+}
+
+.tipos-artigos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.tipos-artigos a {
+    color: #6A86EA;
+    font-family: Manrope;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30.183px; /* 157.143% */
+}
+
+#lista-artigos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+#lista-artigos > div {
+    border-radius: 17.207px;
+    border: 1.434px solid #DEE1E6;
+    background: #FFF;
+    width: min-content;
+    height: auto;
+}
+
+#lista-artigos h3 {
+    padding: 10px 20px;
+    margin: 0;
+}
+.descricao-artigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+#lista-artigos img {
+    width: 55vh;
+}
+
+.descricao-artigo .descricao-artigo-tema-data {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 0.8rem;
+    
+}
+
+.descricao-artigo .descricao-artigo-tema-data p {
+    color: #00A789;
+    font-family: Manrope;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 17.207px;
+    background: #F1F4FD;
+    padding: 0px 5px;
+}
+
+.descricao-artigo .saiba-mais {
+    color: #00A789;
+    font-weight: 600;
 }
