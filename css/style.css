@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 font-family: 'Manrope', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
+
+:root {
+    --cor-ativo: #00A789;
+}
 
 /* configurações padrões */
 * {
@@ -498,11 +502,21 @@ span {
 
 /* footer */
 footer {
+    border-top: 1px solid #57575779;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 20px 0px;
+    margin: 80px 0px 0px 0px;
+    padding: 25px 0px 0px 0px;
+}
+
+footer #termos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.7rem;
 }
 
 footer #logo-sections {
@@ -545,10 +559,13 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 40px 0px;
-    gap: 40px;
+    gap: 70px;
     align-items: center;
 }
 
+#section-artigos h2 {
+    color: #00A789;
+}
 
 .tipos-artigos .todos-artigos {
     border-radius: 24.695px;
@@ -627,4 +644,73 @@ footer p {
 .descricao-artigo .saiba-mais {
     color: #00A789;
     font-weight: 600;
+}
+
+/* recomendações artigos */
+#recomendacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#recomendacoes h3 {
+    color: #323842;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px; 
+    margin: 0px 0px 20px 0px;
+}
+
+#recomendacoes > div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0px 0px 30px 0px;
+}
+
+#recomendacoes div > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 50%;
+}
+
+#recomendacoes div > div > div {
+    background: #F1F4FD;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 80%;
+}
+
+#recomendacoes div > div > span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#recomendacoes a {
+    padding: 5px 10px;
+    border: 1px solid #6A86EA;
+    border-radius: 20px;
+    font-family: 'Manrope';
+    color: #6A86EA;
+}
+
+#recomendacoes a:hover {
+    background: #6a86ea27;
+}
+
+
+.ativo {
+    color: var(--cor-ativo);
 }
