@@ -1,597 +1,642 @@
 /* Estilos para o corpo da página */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Cabin', sans-serif;
-    height: auto;
-  }
-  
-  /* Estilos para a barra de navegação */
-  .navbar {
-    overflow: hidden;
-    background-color: transparent;
-    /* Fundo inicialmente transparente */
-    transition: background-color 0.5s;
-    /* Transição suave de cor */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    /* Certifica-se de que a barra de navegação esteja acima de outros elementos */
-  }
-  
-  /* Estilos para o logo */
-  .navbar .logo {
-    float: left;
-    padding: 10px 20px;
-    font-size: 35px;
-    font-weight: bold;
-    transition: font-size 0.7s;
-    /* Transição suave de tamanho de fonte */
-  }
-  
-  /* Estilos para os links de navegação */
-  .navbar a {
-    float: right;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #000;
-    /* Cor dos links */
-    font-size: 23px;
-    /* Tamanho de fonte inicial */
-    transition: color 0.3s, font-size 0.5s;
-    /* Transições suaves */
-  }
-  
-  /* Estilos para o logo com tamanho de fonte reduzido */
-  .navbar .logo.small {
-    font-size: 30px;
-    /* Tamanho de fonte reduzido */
-  
-  }
-  
-  /* Estilos para os links de navegação com tamanho de fonte reduzido */
-  .navbar a.small {
-    font-size: 25px;
-    /* Tamanho de fonte reduzido */
-  }
-  
-  /* Estilos para os links de navegação no hover */
-  .navbar a:hover {
-    color: #2fa747;
-    /* Cor dos links no hover */
-  }
-  
-  /* Estilos para a barra de navegação ao rolar para baixo */
-  .navbar.scroll {
-    margin-bottom: 10px;
-    background-color: #fff;
-    /* Cor de fundo ao rolar para baixo */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra ao rolar para baixo */
-  }
-  
-  /* Estilos para os elementos da barra de navegação ao rolar para baixo */
-  .navbar.scroll .logo {
-    font-size: 20px;
-    /* Tamanho de fonte reduzido ao rolar para baixo */
-    color: black;
-    /* Cor dos links após serem reduzidos */
-  }
-  
-  .navbar.scroll a {
-    font-size: 25px;
-    /* Tamanho de fonte reduzido ao rolar para baixo */
-  }
-  
-  .navbar.scroll a {
-    color: #000;
-    /* Cor desejada para os links quando rolados */
-  }
-  
-  .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  
-  .content {
-  
-    text-align: center;
-  
-    padding-top: 130px;
-    /* Espaçamento superior para centralizar verticalmente */
-  
-  }
-  
-  
-  /* Estilos para o título */
-  
-  .content h1 {
-  
-    font-size: 90px;
-    text-align: top;
-    margin-bottom: 800px;
-    margin-top: 30px;
-    color: #000;
-    /* Cor do título */
-  
-    margin: 0;
-  
-  }
-  
-  /* Three columns side by side */
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Cabin', sans-serif;
+  height: auto;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+  /* Fundo inicialmente transparente */
+  transition: background-color 0.5s;
+  /* Transição suave de cor */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  /* Certifica-se de que a barra de navegação esteja acima de outros elementos */
+}
+
+/* Estilos para o logo */
+.navbar .logo {
+  float: left;
+  padding: 10px 20px;
+  font-size: 35px;
+  font-weight: bold;
+  transition: font-size 0.7s;
+  /* Transição suave de tamanho de fonte */
+}
+
+/* Estilos para os links de navegação */
+.navbar a {
+  float: right;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  /* Cor dos links */
+  font-size: 23px;
+  /* Tamanho de fonte inicial */
+  transition: color 0.3s, font-size 0.5s;
+  /* Transições suaves */
+}
+
+/* Estilos para o logo com tamanho de fonte reduzido */
+.navbar .logo.small {
+  font-size: 30px;
+  /* Tamanho de fonte reduzido */
+
+}
+
+/* Estilos para os links de navegação com tamanho de fonte reduzido */
+.navbar a.small {
+  font-size: 25px;
+  /* Tamanho de fonte reduzido */
+}
+
+/* Estilos para os links de navegação no hover */
+.navbar a:hover {
+  color: #2fa747;
+  /* Cor dos links no hover */
+}
+
+/* Estilos para a barra de navegação ao rolar para baixo */
+.navbar.scroll {
+  margin-bottom: 10px;
+  background-color: #fff;
+  /* Cor de fundo ao rolar para baixo */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra ao rolar para baixo */
+}
+
+/* Estilos para os elementos da barra de navegação ao rolar para baixo */
+.navbar.scroll .logo {
+  font-size: 20px;
+  /* Tamanho de fonte reduzido ao rolar para baixo */
+  color: black;
+  /* Cor dos links após serem reduzidos */
+}
+
+.navbar.scroll a {
+  font-size: 25px;
+  /* Tamanho de fonte reduzido ao rolar para baixo */
+}
+
+.navbar.scroll a {
+  color: #000;
+  /* Cor desejada para os links quando rolados */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 130px;
+  /* Espaçamento superior para centralizar verticalmente */
+}
+
+
+/* Estilos para o título */
+
+.content h1 {
+
+  font-size: 90px;
+  text-align: top;
+  margin-bottom: 800px;
+  margin-top: 30px;
+  color: #000;
+  /* Cor do título */
+
+  margin: 0;
+
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  padding: 0 0 1rem 0;
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.box {
+  margin: 3.125rem 6.25rem;
+  /* Ajuste a margem para manter o alinhamento */
+}
+
+.box1 {
+  margin-left: 100px;
+  /* Ajuste a margem para centralizar em relação aos cards de cima */
+  width: 180%;
+}
+
+/* Adicione uma margem superior para compensar a diferença na altura dos cards */
+.box1 .column {
+  margin-top: 16px;
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
   .column {
-    float: left;
-    width: 21.2%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  
-  
-  }
-  
-  .box {
-    margin-left: 330px; /* Ajuste a margem para manter o alinhamento */
-  }
-  
-  .box1 {
-    margin-left: 100px; /* Ajuste a margem para centralizar em relação aos cards de cima */
-  }
-  
-  /* Adicione uma margem superior para compensar a diferença na altura dos cards */
-  .box1 .column {
-    margin-top: 16px;
-  }
-  
-  
-  /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-      border-radius: 20px;
-    }
-  }
-  
-  /* Add some shadows to create a card effect */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  
-  /* Some left and right padding inside the container */
-  .container {
-    padding: 0 16px;
-    border-radius: 20px;
-  }
-  
-  /* Clear floats */
-  .container::after,
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 5px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
     width: 100%;
+    display: block;
     border-radius: 20px;
-    margin-right: px;
   }
-  
-  .button:hover {
-    background-color: #555;
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  border-radius: 20px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+  margin-right: px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+/* Estilos para o rodapé */
+
+/* Estilos para o rodapé (inicialmente oculto) */
+
+footer {
+
+  display: none;
+
+  background-color: #333;
+  /* Cor de fundo do rodapé */
+
+  color: #fff;
+  /* Cor do texto no rodapé */
+
+  padding: 20px 0;
+  /* Espaçamento interno */
+
+  text-align: center;
+  /* Alinhamento do texto no centro */
+
+}
+
+
+
+/* Estilos para o conteúdo do rodapé */
+
+.footer-content {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+}
+
+
+/* Estilos para a lista de links no rodapé */
+
+.footer-content ul {
+
+  list-style: none;
+
+  padding: 0;
+
+  display: flex;
+
+}
+
+
+
+.footer-content ul li {
+
+  margin: 0 10px;
+
+}
+
+
+
+/* Estilos para os links no rodapé */
+
+.footer-content a {
+
+  text-decoration: none;
+
+  color: #fff;
+
+}
+
+
+
+/* Estilos para os links no rodapé ao passar o mouse */
+
+.footer-content a:hover {
+
+  text-decoration: underline;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.full-width {
+  width: 26.2%;
+}
+
+footer {
+  background-color: #333;
+  /* Cor de fundo do rodapé */
+  color: #fff;
+  /* Cor do texto no rodapé */
+  padding: 20px 0;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Alinhamento do texto no centro */
+}
+
+/* Estilos para o conteúdo do rodapé */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para a lista de links no rodapé */
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-content ul li {
+  margin: 0 10px;
+}
+
+/* Estilos para os links no rodapé */
+.footer-content a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para os links no rodapé ao passar o mouse */
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.button1 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  left: 1350px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #4CAF50;
+  /* Nova cor de fundo do botão */
+}
+
+.button2 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  left: 1420px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #4CAF50;
+  /* Nova cor de fundo do botão */
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* Adiciona bordas arredondadas à imagem */
+}
+
+/* Adicione estas regras no seu arquivo CSS */
+
+#mensagem {
+  /* Adicione estilos gerais da mensagem aqui */
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 999;
+  transition: opacity 0.5s;
+}
+
+.aumentar {
+  background-color: #4CAF50;
+  /* Cor de fundo verde para aumentar a fonte */
+  color: white;
+  /* Cor do texto branco */
+}
+
+.diminuir {
+  background-color: #FF5733;
+  /* Cor de fundo laranja para diminuir a fonte */
+  color: white;
+  /* Cor do texto branco */
+}
+
+.logo-img {
+  position: fixed;
+  top: 2px;
+  left: 10px;
+  z-index: 1001;
+  /* Certifique-se de que esteja acima do botão toggle */
+}
+
+.logo-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  /* Ajuste a altura conforme necessário */
+  background-color: transparent;
+  /* Cor inicial transparente */
+  transition: background-color 0.5s;
+  /* Transição suave de cor */
+  z-index: 998;
+  /* Certifique-se de que esteja abaixo da barra de navegação */
+}
+
+.logo-background.scroll {
+  background-color: #ffffff;
+  /* Cor de fundo desejada ao rolar */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o menu mobile */
+.mobile-navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 90px;
+}
+
+.mobile-navbar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobile-navbar a:hover {
+  color: #0C9C2B;
+}
+
+.mobile-navbar-toggle {
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  display: none;
+  /* Inicialmente oculto */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  display: none;
+  /* Inicialmente oculto */
+}
+
+/* Exibe o botão toggle apenas quando a largura da tela for menor que 768px */
+@media only screen and (max-width: 768px) {
+  .mobile-navbar-toggle {
+    display: block;
   }
-  
-  
-  /* Estilos para o rodapé */
-  
-  /* Estilos para o rodapé (inicialmente oculto) */
-  
-  footer {
-  
-      display: none;
-  
-      background-color: #333; /* Cor de fundo do rodapé */
-  
-      color: #fff; /* Cor do texto no rodapé */
-  
-      padding: 20px 0; /* Espaçamento interno */
-  
-      text-align: center; /* Alinhamento do texto no centro */
-  
+
+  .navbar {
+    display: none;
+    /* Esconde a barra de navegação web quando o menu mobile está visível */
   }
-  
-  
-  
-    /* Estilos para o conteúdo do rodapé */
-  
-    .footer-content {
-  
-        display: flex;
-  
-        justify-content: space-between;
-  
-        align-items: center;
-  
-        max-width: 1200px;
-  
-        margin: 0 auto;
-  
-    }
-  
-  
-    /* Estilos para a lista de links no rodapé */
-  
-    .footer-content ul {
-  
-        list-style: none;
-  
-        padding: 0;
-  
-        display: flex;
-  
-    }
-  
-  
-  
-    .footer-content ul li {
-  
-        margin: 0 10px;
-  
-    }
-  
-  
-  
-    /* Estilos para os links no rodapé */
-  
-    .footer-content a {
-  
-        text-decoration: none;
-  
-        color: #fff;
-  
-    }
-  
-  
-  
-    /* Estilos para os links no rodapé ao passar o mouse */
-  
-    .footer-content a:hover {
-  
-        text-decoration: underline;
-  
-    }
-  
-  a{
-    text-decoration: none;
+
+  .close-btn {
+    display: block;
+    /* Exibe o botão de fechar quando o menu mobile está visível */
   }
-  
-  .full-width {
-    width: 26.2%;
-  }
-  
-  footer {
-      background-color: #333; /* Cor de fundo do rodapé */
-      color: #fff; /* Cor do texto no rodapé */
-      padding: 20px 0; /* Espaçamento interno */
-      text-align: center; /* Alinhamento do texto no centro */
-  }
-  
-  /* Estilos para o conteúdo do rodapé */
-  .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-  }
-  
-  /* Estilos para a lista de links no rodapé */
-  .footer-content ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-  }
-  
-  .footer-content ul li {
-      margin: 0 10px;
-  }
-  
-  /* Estilos para os links no rodapé */
-  .footer-content a {
-      text-decoration: none;
-      color: #fff;
-  }
-  
-  /* Estilos para os links no rodapé ao passar o mouse */
-  .footer-content a:hover {
-      text-decoration: underline;
-  }
-  
-  .button1 {
-      font-size: 14px;
-      margin-top: 10px;
-      margin-right: 10px;
-      padding: 5px;
-      cursor: pointer;
-      position: fixed;
-      bottom: 10px;
-      left: 1350px;
-      display: flex;
-      align-items: center;
-      border-radius: 30px;
-      background-color: #4CAF50; /* Nova cor de fundo do botão */
-  }
-  
-  .button2 {
-      font-size: 14px;
-      margin-top: 10px;
-      margin-right: 10px;
-      padding: 5px;
-      cursor: pointer;
-      position: fixed;
-      bottom: 10px;
-      left: 1420px;
-      display: flex;
-      align-items: center;
-      border-radius: 30px;
-      background-color: #4CAF50; /* Nova cor de fundo do botão */
-  }
-  
-  button {
-      border: none;
-      background: none;
-      cursor: pointer;
-  }
-  
-  button img {
-      margin-right: 5px;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%; /* Adiciona bordas arredondadas à imagem */
-  }
-  
-  /* Adicione estas regras no seu arquivo CSS */
-  
-  #mensagem {
-      /* Adicione estilos gerais da mensagem aqui */
-      display: none;
-      position: fixed;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 15px;
-      border-radius: 10px;
-      z-index: 999;
-      transition: opacity 0.5s;
-  }
-  
-  .aumentar {
-      background-color: #4CAF50; /* Cor de fundo verde para aumentar a fonte */
-      color: white; /* Cor do texto branco */
-  }
-  
-  .diminuir {
-      background-color: #FF5733; /* Cor de fundo laranja para diminuir a fonte */
-      color: white; /* Cor do texto branco */
-  }
-  
+
   .logo-img {
-    position: fixed;
-    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Adicione esta regra de mídia para esconder o botão em telas maiores que 768px */
+@media only screen and (min-width: 769px) {
+  .mobile-navbar-toggle {
+    display: none;
+  }
+
+  /* Também, esconda o menu mobile e o botão de fechar em telas maiores que 768px */
+  .mobile-navbar,
+  .close-btn {
+    display: none;
+  }
+
+  /* Exiba a barra de navegação web em telas maiores que 768px */
+  .navbar {
+    display: block;
+  }
+
+  .logo-img {
     left: 10px;
-    z-index: 1001; /* Certifique-se de que esteja acima do botão toggle */
+    /* Ajuste a posição do logotipo para o valor desejado */
+    transform: none;
+    /* Reinicie a transformação */
   }
-  
-  .logo-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px; /* Ajuste a altura conforme necessário */
-    background-color: transparent; /* Cor inicial transparente */
-    transition: background-color 0.5s; /* Transição suave de cor */
-    z-index: 998; /* Certifique-se de que esteja abaixo da barra de navegação */
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* Adicione aqui as alterações específicas para telas menores que 769px */
+  .navbar {
+    background-color: #333;
   }
-  
-  .logo-background.scroll {
-    background-color: #ffffff; /* Cor de fundo desejada ao rolar */
+
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .navbar.scroll a {
+    color: #000;
+  }
+
+  .navbar.scroll {
+    background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Estilos para o menu mobile */
+
   .mobile-navbar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
     background-color: #333;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 90px;
   }
-  
+
   .mobile-navbar a {
-    padding: 15px;
-    text-decoration: none;
-    font-size: 20px;
     color: white;
-    display: block;
-    transition: 0.3s;
   }
-  
-  .mobile-navbar a:hover {
-    color: #0C9C2B;
-  }
-  
+
   .mobile-navbar-toggle {
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
+    display: block;
+  }
+
+  .close-btn {
+    display: block;
+  }
+}
+
+/* Adaptação para telas menores que 769px */
+@media only screen and (max-width: 768px) {
+  .recipe {
+    width: 100%;
+    /* Ocupa 100% da largura da tela */
+    margin: 10px 0;
+    /* Adiciona margem superior e inferior para separar os cards */
+  }
+}
+
+/* Mídia Query para telas menores que 769px */
+@media (max-width: 768px) {
+  #backButton {
+    display: block;
     position: fixed;
     top: 10px;
-    right: 10px;
-    z-index: 1001;
-    display: none; /* Inicialmente oculto */
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
+    left: 10px;
+    z-index: 1000;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    color: white;
-    display: none; /* Inicialmente oculto */
+    font-size: 25px;
   }
-  
-  /* Exibe o botão toggle apenas quando a largura da tela for menor que 768px */
-  @media only screen and (max-width: 768px) {
-    .mobile-navbar-toggle {
-      display: block;
-    }
-  
-    .navbar {
-      display: none; /* Esconde a barra de navegação web quando o menu mobile está visível */
-    }
-  
-    .close-btn {
-      display: block; /* Exibe o botão de fechar quando o menu mobile está visível */
-    }
-  
-    .logo-img {
-      left: 50%;
-      transform: translateX(-50%);
-    }
+
+  .navbar {
+    display: none;
+    /* Oculta a barra de navegação para dar espaço ao botão */
   }
-  
-  /* Adicione esta regra de mídia para esconder o botão em telas maiores que 768px */
-  @media only screen and (min-width: 769px) {
-    .mobile-navbar-toggle {
-      display: none;
-    }
-  
-    /* Também, esconda o menu mobile e o botão de fechar em telas maiores que 768px */
-    .mobile-navbar,
-    .close-btn {
-      display: none;
-    }
-  
-    /* Exiba a barra de navegação web em telas maiores que 768px */
-    .navbar {
-      display: block;
-    }
-  
-    .logo-img {
-      left: 10px; /* Ajuste a posição do logotipo para o valor desejado */
-      transform: none; /* Reinicie a transformação */
-    }
-  
-  
+}
+
+/* Adaptação para telas menores que 769px */
+@media only screen and (max-width: 768px) {
+  .column {
+    width: 90%;
+    /* Defina a largura dos cards para ocupar 100% da largura da tela */
+    margin-bottom: 16px;
+    /* Adicione uma margem inferior para separar os cards */
   }
-  @media only screen and (max-width: 768px) {
-    /* Adicione aqui as alterações específicas para telas menores que 769px */
-    .navbar {
-      background-color: #333;
-    }
-  
-    .navbar a {
-      font-size: 20px;
-    }
-  
-    .navbar.scroll a {
-      color: #000;
-    }
-  
-    .navbar.scroll {
-      background-color: #fff;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-  
-    .mobile-navbar {
-      background-color: #333;
-    }
-  
-    .mobile-navbar a {
-      color: white;
-    }
-  
-    .mobile-navbar-toggle {
-      display: block;
-    }
-  
-    .close-btn {
-      display: block;
-    }
+
+  .box {
+    margin-left: 0;
+    /* Remova a margem esquerda para centralizar os cards na tela */
   }
-  
-  /* Adaptação para telas menores que 769px */
-  @media only screen and (max-width: 768px) {
-      .recipe {
-          width: 100%; /* Ocupa 100% da largura da tela */
-          margin: 10px 0; /* Adiciona margem superior e inferior para separar os cards */
-      }
+
+  .box1 {
+    margin-left: 0;
+    /* Remova a margem esquerda para centralizar os cards na tela */
   }
-  
-  /* Mídia Query para telas menores que 769px */
-  @media (max-width: 768px) {
-      #backButton {
-          display: block;
-          position: fixed;
-          top: 10px;
-          left: 10px;
-          z-index: 1000;
-          background-color: transparent;
-          color: black;
-          border: none;
-          padding: 10px;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 25px;
-      }
-  
-      .navbar {
-          display: none; /* Oculta a barra de navegação para dar espaço ao botão */
-      }
-  }
-  
-  /* Adaptação para telas menores que 769px */
-  @media only screen and (max-width: 768px) {
-      .column {
-          width: 90%; /* Defina a largura dos cards para ocupar 100% da largura da tela */
-          margin-bottom: 16px; /* Adicione uma margem inferior para separar os cards */
-      }
-  
-      .box {
-          margin-left: 0; /* Remova a margem esquerda para centralizar os cards na tela */
-      }
-  
-      .box1 {
-          margin-left: 0; /* Remova a margem esquerda para centralizar os cards na tela */
-      }
-  }
-  
-  
+}
