@@ -775,11 +775,6 @@ article h4 {
     margin: 0px 0px 10px 0px;
 }
 
-article a:hover {
-    background: #1111112a;
-    border-radius: 20px;
-}
-
 .voltar {
     display: flex;
     width: fit-content;
@@ -793,3 +788,33 @@ article a:hover {
     color: #FFF;
     background: #00a788;
 }
+
+article img {
+    margin-left: 20px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+article img:hover {
+    background: #57575773;
+}
+
+article h3 {
+    margin: 15px 0px;
+    text-align: justify;
+}
+
+article ul {
+    margin: 8px 20px;
+    text-decoration: black;
+}
+
+.foto-representativa-article {
+    position: relative;
+    top: 0;
+     bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
