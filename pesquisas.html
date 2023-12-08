@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artigos</title>
     <link rel="shortcut icon" type="imagex/png" href="./src/logo/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -13,13 +14,13 @@
             <div id="logo">
                 <a href="index.html"><img src="./src/logo/logoRotine.svg"></a>
             </div>
-            
+
             <div id="navbar-items">
                 <ul id="navbar-sections">
                     <li class="navbar-inicio"><a href="index.html">Inicio</a></li>
                     <li class="navbar-sobre-nos"><a href="sobre-nos.html">Sobre Nós</a></li>
-                    <li class="navbar-artigos" style="color: #00A789;"><a href="artigos.html">Artigos</a></li>
-                </ul> 
+                    <li class="navbar-artigos" style="color: #00A789"><a href="artigos.html">Artigos</a></li>
+                </ul>
 
                 <div id="btn-login-signup">
                     <a href="#" class="login">Entrar</a>
@@ -36,66 +37,101 @@
             <a href="pesquisas.html" class="nutrição-artigos fundo_ativo">Pesquisas</a>
             <a href="arquivos.html" class="diversos-artigos">Arquivos</a>
         </nav>
+    </section>
 
-        <div id="lista-artigos">
-            <!-- Cards -->
-            <div id="atividade-fisica-e-qualidade-de-vida">
-                <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">
-                    <img src="./assets/ImagemArtigo1.png" alt="">
-                    <h3>Atividade Física e Qualidade de Vida</h3>
-                </a>
-                <div class="descricao-artigo">
-                    <div class="descricao-artigo-tema-data">
-                        <p>Artigo exercicio</p>
-                        <p class="data-artigos">Dez 1, 2023</p>
+    <!-- Slider main container -->
+    <section class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides --> <!-- Cards -->
+            <div class="swiper-slide">
+                <div id="lista-artigos">
+                    <div id="atividade-fisica-e-qualidade-de-vida" class="card">
+                        <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">
+                            <img src="./assets/ImagemArtigo1.png" alt="">
+                            <h3>Atividade Física e Qualidade de Vida</h3>
+                        </a>
+                        <div class="descricao-artigo">
+                            <div class="descricao-artigo-tema-data">
+                                <p>Artigo exercicio</p>
+                                <p class="data-artigos">Dez 1, 2023</p>
+                            </div>
+                            <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">Saiba Mais</a>
+                        </div>
                     </div>
-                    <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">Saiba Mais</a>
                 </div>
             </div>
-            <div id="nutricionismo-e-culinaria">
-                <a href="nutricionismo-e-culinaria.html" class="saiba-mais">
-                    <img src="./assets/ImagemArtigo2.png" alt="">
-                    <h3>Nutricionismo e Culinária</h3>
-                </a>
-                <div class="descricao-artigo">
-                    <div class="descricao-artigo-tema-data">
-                        <p>Artigo Nutrição</p>
-                        <p class="data-artigos">Dez 1, 2023</p>
+            <div class="swiper-slide">
+                <div id="lista-artigos">
+                    <div id="nutricionismo-e-culinaria" class="card">
+                        <a href="nutricionismo-e-culinaria.html" class="saiba-mais">
+                            <img src="./assets/ImagemArtigo2.png" alt="">
+                            <h3>Nutricionismo e Culinária</h3>
+                        </a>
+                        <div class="descricao-artigo">
+                            <div class="descricao-artigo-tema-data">
+                                <p>Artigo Nutrição</p>
+                                <p class="data-artigos">Dez 1, 2023</p>
+                            </div>
+                            <a href="nutricionismo-e-culinaria.html" class="saiba-mais">Saiba Mais</a>
+                        </div>
                     </div>
-                    <a href="#" class="saiba-mais">Saiba Mais</a>
                 </div>
             </div>
-            <div id="barreiras-a-informacao-em-saude">
-                <a href="barreiras-a-informacao-em-saude.html" class="saiba-mais">
-                    <img src="./assets/ImagemArtigo3.png" alt="">
-                    <h3>Barreiras á informação em saúde</h3>
-                </a>
-                <div class="descricao-artigo">
-                    <div class="descricao-artigo-tema-data">
-                        <p>Artigo informação</p>
-                        <p class="data-artigos">Dez 1, 2023</p>
+            <div class="swiper-slide">
+                <div id="lista-artigos">
+                    <div id="barreiras-a-informacao-em-saude" class="card">
+                        <a href="barreiras-a-informacao-em-saude.html" class="saiba-mais">
+                            <img src="./assets/ImagemArtigo3.png" alt="">
+                            <h3>Barreiras á informação em saúde</h3>
+                        </a>
+                        <div class="descricao-artigo">
+                            <div class="descricao-artigo-tema-data">
+                                <p>Artigo informação</p>
+                                <p class="data-artigos">Dez 1, 2023</p>
+                            </div>
+                            <a href="#" class="saiba-mais">Saiba Mais</a>
+                        </div>
                     </div>
-                    <a href="#" class="saiba-mais">Saiba Mais</a>
                 </div>
             </div>
-            <div id="artigo-inclusao">
-                <a href="https://etecspgov-my.sharepoint.com/:b:/g/personal/igor_silva816_etec_sp_gov_br/Ebvp-RpCqZVMs-SacBK0wE4BeF6smQYuvs7PJ_QkjCsZGw?e=T52n7J" class="saiba-mais">
-                    <img src="./assets/inclusao.png" alt="">
-                    <h3>Inclusão</h3>
-                </a>
-                <div class="descricao-artigo">
-                    <div class="descricao-artigo-tema-data">
-                        <p>Artigo informação</p>
-                        <p class="data-artigos">Dez 05, 2023</p>
+            <div class="swiper-slide">
+                <div id="lista-artigos">
+                    <div id="artigo-inclusao" class="card">
+                        <a href="https://etecspgov-my.sharepoint.com/:b:/g/personal/igor_silva816_etec_sp_gov_br/Ebvp-RpCqZVMs-SacBK0wE4BeF6smQYuvs7PJ_QkjCsZGw?e=T52n7J"
+                            class="saiba-mais">
+                            <img src="./assets/inclusao.png" alt="">
+                            <h3>Inclusão</h3>
+                        </a>
+                        <div class="descricao-artigo">
+                            <div class="descricao-artigo-tema-data">
+                                <p>Artigo informação</p>
+                                <p class="data-artigos">Dez 05, 2023</p>
+                            </div>
+                            <a href="#" class="saiba-mais">Saiba Mais</a>
+                        </div>
                     </div>
-                    <a href="#" class="saiba-mais">Saiba Mais</a>
                 </div>
             </div>
+            ...
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </section>
+
+    <section id="section-artigos">
         <div id="artigo-destaque">
-        <div id="text-article">
+            <div id="text-article">
                 <h3>Nutricionismo e Culinária</h3>
-                <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim do próprio corpo. <a href="#">Saiba Mais+</a></p>
+                <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim
+                    do próprio corpo. <a href="#">Saiba Mais+</a></p>
                 <span>Destaques</span>
                 <p class="data-article">Dez 1, 2023</p>
             </div>
@@ -110,22 +146,25 @@
         <h3>Todas as nossas recomendações são</h3>
         <div>
             <div>
-            <div><img src="./src/imagens/Icones/image 272.svg" alt=""></div>
-            <span>Escolhidas carinhosamente</span>
-            <p>Nosso grupo de estudantes e profissionais da área da saúde como um todo, escolhem carinhosamente as melhores e mais eficientes recomendações.</p>
+                <div><img src="./src/imagens/Icones/image 272.svg" alt=""></div>
+                <span>Escolhidas carinhosamente</span>
+                <p>Nosso grupo de estudantes e profissionais da área da saúde como um todo, escolhem carinhosamente as
+                    melhores e mais eficientes recomendações.</p>
             </div>
             <div>
                 <div><img src="./src/imagens/Icones/image 270.svg" alt=""></div>
                 <span>Pesquisadas</span>
-                <p>Todos pesquisamos e buscamos o máximo de cada recomendação, para que o seu proveito seja o melhor possível.</p>
+                <p>Todos pesquisamos e buscamos o máximo de cada recomendação, para que o seu proveito seja o melhor
+                    possível.</p>
             </div>
             <div>
                 <div><img src="./src/imagens/Icones/Image 271.svg" alt=""></div>
                 <span>Comprovadas</span>
-                <p>Ainda para que essas recomendações sejam confiáveis, buscamos sempre a análise de profissionais e estudos extensos que possam comprovar a real eficiência, trazendo mais confiança para você.</p>
+                <p>Ainda para que essas recomendações sejam confiáveis, buscamos sempre a análise de profissionais e
+                    estudos extensos que possam comprovar a real eficiência, trazendo mais confiança para você.</p>
             </div>
         </div>
-        <a href="#">Conheça-nos</a>
+        <a href="sobre-nos.html">Conheça-nos</a>
     </section>
     
     <footer>
@@ -150,5 +189,20 @@
             <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 3,
+                spaceBetween: -300, // Ajuste este valor conforme necessário
+                //centeredSlides: true, // Centraliza os slides
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });                                  
+    </script>
 </body>
 </html>

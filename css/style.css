@@ -818,3 +818,26 @@ article ul {
     margin: auto;
 }
 
+
+
+.swiper-container {
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.swiper-slide {
+    width: 300px; /* Ou qualquer valor desejado */
+    box-sizing: border-box; /* Garante que a largura inclua as bordas e o preenchimento */
+}
+.swiper-wrapper {
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.link-arquivos {
+    font-size: 1rem;
+}

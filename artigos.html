@@ -1,168 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Artigos</title>
-        <link rel="shortcut icon" type="imagex/png" href="./src/logo/logo.svg">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    
-    <body>
-        <header>
-            <nav id="topbar">
-                <div id="logo">
-                    <a href="index.html"><img src="./src/logo/logoRotine.svg"></a>
-                </div>
-                
-                <div id="navbar-items">
-                    <ul id="navbar-sections">
-                        <li class="navbar-inicio"><a href="index.html">Inicio</a></li>
-                        <li class="navbar-sobre-nos"><a href="sobre-nos.html">Sobre Nós</a></li>
-                        <li class="navbar-artigos" style="color: #00A789"><a href="artigos.html">Artigos</a></li>
-                    </ul> 
 
-                    <div id="btn-login-signup">
-                        <a href="#" class="login">Entrar</a>
-                        <a href="#" class="signup">Cadastrar</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos</title>
+    <link rel="shortcut icon" type="imagex/png" href="./src/logo/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-        <section id="section-artigos">
-            <h2>Artigos</h2>
-            <nav class="tipos-artigos">
-                <a href="artigos.html" class="todos-artigos fundo_ativo">Todos</a>
-                <a href="pesquisas.html" class="nutrição-artigos">Pesquisas</a>
-                <a href="arquivos.html" class="diversos-artigos">Arquivos</a>
-            </nav>
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="logo">
+                <a href="index.html"><img src="./src/logo/logoRotine.svg"></a>
+            </div>
 
-            <div id="lista-artigos">
-                <!-- Cards -->
-                <div id="atividade-fisica-e-qualidade-de-vida">
-                    <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">
-                        <img src="./assets/ImagemArtigo1.png" alt="">
-                        <h3>Atividade Física e Qualidade de Vida</h3>
-                    </a>
-                    <div class="descricao-artigo">
-                        <div class="descricao-artigo-tema-data">
-                            <p>Artigo exercicio</p>
-                            <p class="data-artigos">Dez 1, 2023</p>
-                        </div>
-                        <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">Saiba Mais</a>
-                    </div>
+            <div id="navbar-items">
+                <ul id="navbar-sections">
+                    <li class="navbar-inicio"><a href="index.html">Inicio</a></li>
+                    <li class="navbar-sobre-nos"><a href="sobre-nos.html">Sobre Nós</a></li>
+                    <li class="navbar-artigos" style="color: #00A789"><a href="artigos.html">Artigos</a></li>
+                </ul>
+
+                <div id="btn-login-signup">
+                    <a href="#" class="login">Entrar</a>
+                    <a href="#" class="signup">Cadastrar</a>
                 </div>
-                <div id="nutricionismo-e-culinaria">
-                    <a href="nutricionismo-e-culinaria.html" class="saiba-mais">
-                        <img src="./assets/ImagemArtigo2.png" alt="">
-                        <h3>Nutricionismo e Culinária</h3>
-                    </a>
-                    <div class="descricao-artigo">
-                        <div class="descricao-artigo-tema-data">
-                            <p>Artigo Nutrição</p>
-                            <p class="data-artigos">Dez 1, 2023</p>
+            </div>
+        </nav>
+    </header>
+
+    <section id="section-artigos">
+        <h2>Artigos</h2>
+        <nav class="tipos-artigos">
+            <a href="artigos.html" class="todos-artigos fundo_ativo">Todos</a>
+            <a href="pesquisas.html" class="nutrição-artigos">Pesquisas</a>
+            <a href="arquivos.html" class="diversos-artigos">Arquivos</a>
+        </nav>
+    </section>
+
+    <!-- Slider main container -->
+    <section class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides --> <!-- Cards -->
+            <div class="swiper-slide">
+                <div id="lista-artigos">
+                    <div id="atividade-fisica-e-qualidade-de-vida" class="card">
+                        <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">
+                            <img src="./assets/ImagemArtigo1.png" alt="">
+                            <h3>Atividade Física e Qualidade de Vida</h3>
+                        </a>
+                        <div class="descricao-artigo">
+                            <div class="descricao-artigo-tema-data">
+                                <p>Artigo exercicio</p>
+                                <p class="data-artigos">Dez 1, 2023</p>
+                            </div>
+                            <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">Saiba Mais</a>
                         </div>
-                        <a href="nutricionismo-e-culinaria.html" class="saiba-mais">Saiba Mais</a>
-                    </div>
-                </div>
-                <div id="barreiras-a-informacao-em-saude">
-                    <a href="barreiras-a-informacao-em-saude.html" class="saiba-mais">
-                        <img src="./assets/ImagemArtigo3.png" alt="">
-                        <h3>Barreiras á informação em saúde</h3>
-                    </a>
-                    <div class="descricao-artigo">
-                        <div class="descricao-artigo-tema-data">
-                            <p>Artigo informação</p>
-                            <p class="data-artigos">Dez 1, 2023</p>
-                        </div>
-                        <a href="#" class="saiba-mais">Saiba Mais</a>
-                    </div>
-                </div>
-                <div id="artigo-inclusao">
-                    <a href="https://etecspgov-my.sharepoint.com/:b:/g/personal/igor_silva816_etec_sp_gov_br/Ebvp-RpCqZVMs-SacBK0wE4BeF6smQYuvs7PJ_QkjCsZGw?e=T52n7J" class="saiba-mais">
-                        <img src="./assets/inclusao.png" alt="">
-                        <h3>Inclusão</h3>
-                    </a>
-                    <div class="descricao-artigo">
-                        <div class="descricao-artigo-tema-data">
-                            <p>Artigo informação</p>
-                            <p class="data-artigos">Dez 05, 2023</p>
-                        </div>
-                        <a href="#" class="saiba-mais">Saiba Mais</a>
                     </div>
                 </div>
             </div>
-            <div id="artigo-destaque">
+            <div class="swiper-slide">
+                <div id="lista-artigos">
+                    <div id="nutricionismo-e-culinaria" class="card">
+                        <a href="nutricionismo-e-culinaria.html" class="saiba-mais">
+                            <img src="./assets/ImagemArtigo2.png" alt="">
+                            <h3>Nutricionismo e Culinária</h3>
+                        </a>
+                        <div class="descricao-artigo">
+                            <div class="descricao-artigo-tema-data">
+                                <p>Artigo Nutrição</p>
+                                <p class="data-artigos">Dez 1, 2023</p>
+                            </div>
+                            <a href="nutricionismo-e-culinaria.html" class="saiba-mais">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div id="lista-artigos">
+                    <div id="barreiras-a-informacao-em-saude" class="card">
+                        <a href="barreiras-a-informacao-em-saude.html" class="saiba-mais">
+                            <img src="./assets/ImagemArtigo3.png" alt="">
+                            <h3>Barreiras á informação em saúde</h3>
+                        </a>
+                        <div class="descricao-artigo">
+                            <div class="descricao-artigo-tema-data">
+                                <p>Artigo informação</p>
+                                <p class="data-artigos">Dez 1, 2023</p>
+                            </div>
+                            <a href="#" class="saiba-mais">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div id="lista-artigos">
+                    <div id="artigo-inclusao" class="card">
+                        <a href="https://etecspgov-my.sharepoint.com/:b:/g/personal/igor_silva816_etec_sp_gov_br/Ebvp-RpCqZVMs-SacBK0wE4BeF6smQYuvs7PJ_QkjCsZGw?e=T52n7J"
+                            class="saiba-mais">
+                            <img src="./assets/inclusao.png" alt="">
+                            <h3>Inclusão</h3>
+                        </a>
+                        <div class="descricao-artigo">
+                            <div class="descricao-artigo-tema-data">
+                                <p>Artigo informação</p>
+                                <p class="data-artigos">Dez 05, 2023</p>
+                            </div>
+                            <a href="#" class="saiba-mais">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </section>
+
+    <section id="section-artigos">
+        <div id="artigo-destaque">
             <div id="text-article">
-                    <h3>Nutricionismo e Culinária</h3>
-                    <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim do próprio corpo. <a href="#">Saiba Mais+</a></p>
-                    <span>Destaques</span>
-                    <p class="data-article">Dez 1, 2023</p>
-                </div>
-                <div class="imgs-article">
-                    <img id="img-article" src="./src/index/image 3.png" alt="">
-                    <img id="img-example" src="./src/index/Rectangle 29.png" alt="">
-                </div>
+                <h3>Nutricionismo e Culinária</h3>
+                <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim
+                    do próprio corpo. <a href="#">Saiba Mais+</a></p>
+                <span>Destaques</span>
+                <p class="data-article">Dez 1, 2023</p>
             </div>
-        </section>
+            <div class="imgs-article">
+                <img id="img-article" src="./src/index/image 3.png" alt="">
+                <img id="img-example" src="./src/index/Rectangle 29.png" alt="">
+            </div>
+        </div>
+    </section>
 
-        <section id="recomendacoes">
-            <h3>Todas as nossas recomendações são</h3>
+    <section id="recomendacoes">
+        <h3>Todas as nossas recomendações são</h3>
+        <div>
             <div>
-                <div>
                 <div><img src="./src/imagens/Icones/image 272.svg" alt=""></div>
                 <span>Escolhidas carinhosamente</span>
-                <p>Nosso grupo de estudantes e profissionais da área da saúde como um todo, escolhem carinhosamente as melhores e mais eficientes recomendações.</p>
-                </div>
-                <div>
-                    <div><img src="./src/imagens/Icones/image 270.svg" alt=""></div>
-                    <span>Pesquisadas</span>
-                    <p>Todos pesquisamos e buscamos o máximo de cada recomendação, para que o seu proveito seja o melhor possível.</p>
-                </div>
-                <div>
-                    <div><img src="./src/imagens/Icones/Image 271.svg" alt=""></div>
-                    <span>Comprovadas</span>
-                    <p>Ainda para que essas recomendações sejam confiáveis, buscamos sempre a análise de profissionais e estudos extensos que possam comprovar a real eficiência, trazendo mais confiança para você.</p>
-                </div>
+                <p>Nosso grupo de estudantes e profissionais da área da saúde como um todo, escolhem carinhosamente as
+                    melhores e mais eficientes recomendações.</p>
             </div>
-            <a href="sobre-nos.html">Conheça-nos</a>
-        </section>
-
-        <!--ARTIGO CIENTIFICO SAMELA-->
-
-        <!--DOCUMENTO WORD HORMONIOS-->
-        <a href="https://etecspgov-my.sharepoint.com/:w:/g/personal/igor_silva816_etec_sp_gov_br/EX2CbQurk71Kl9kcVgiE4e0Bs3-Hk8lGjfwqpuC0VuWofA?e=MUEW34">Arquivo WORD Hormônios</a>
-        <a href="endorfina.html">Pagina Hormônios</a>
-
-        <!-- VIDEOS EMBEDS -->
-        <div style="display: flexbox; flex-direction: row;flex-wrap: nowrap; height: auto; align-items: center;">
-            <div style="max-width: 400px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://etecspgov-my.sharepoint.com/personal/igor_silva816_etec_sp_gov_br/_layouts/15/embed.aspx?UniqueId=d46ec47e-8256-4299-958f-9d57c1d9bdfe&embed=%7B%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="853" height="480" frameborder="0" scrolling="no" allowfullscreen title="202311071951.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
-            <div style="max-width: 400px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://etecspgov-my.sharepoint.com/personal/igor_silva816_etec_sp_gov_br/_layouts/15/embed.aspx?UniqueId=9334367a-6c97-49fd-9aac-e30562fb4a81&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="853" height="480" frameborder="0" scrolling="no" allowfullscreen title="psicóloga.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
-            <div style="max-width: 400px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://etecspgov-my.sharepoint.com/personal/igor_silva816_etec_sp_gov_br/_layouts/15/embed.aspx?UniqueId=9a662bde-2a68-4b98-99e5-21aed1702829&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="853" height="480" frameborder="0" scrolling="no" allowfullscreen title="lv_0_20231107080000.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
+            <div>
+                <div><img src="./src/imagens/Icones/image 270.svg" alt=""></div>
+                <span>Pesquisadas</span>
+                <p>Todos pesquisamos e buscamos o máximo de cada recomendação, para que o seu proveito seja o melhor
+                    possível.</p>
+            </div>
+            <div>
+                <div><img src="./src/imagens/Icones/Image 271.svg" alt=""></div>
+                <span>Comprovadas</span>
+                <p>Ainda para que essas recomendações sejam confiáveis, buscamos sempre a análise de profissionais e
+                    estudos extensos que possam comprovar a real eficiência, trazendo mais confiança para você.</p>
+            </div>
         </div>
+        <a href="sobre-nos.html">Conheça-nos</a>
+    </section>
 
-        <footer>
-            <div id="logo-sections">
-                <img src="./src/logo/logo.svg" alt="">
-                <div id="footer-sections">
-                    <a href="#">Artigos</a> 
-                    <a href="#">Sobre nós</a> 
-                    <a href="#">Atualizações</a> 
-                    <a href="#">Entre em contato</a> 
-                    <a href="#">Seja um patrocinador</a> 
-                    <a href="#">Instale nosso aplicativo</a>
-                </div>
+    <!--ARTIGO CIENTIFICO SAMELA-->
+
+    <!--DOCUMENTO WORD HORMONIOS-->
+    <a
+        href="https://etecspgov-my.sharepoint.com/:w:/g/personal/igor_silva816_etec_sp_gov_br/EX2CbQurk71Kl9kcVgiE4e0Bs3-Hk8lGjfwqpuC0VuWofA?e=MUEW34">Arquivo
+        WORD Hormônios</a>
+    <a href="endorfina.html">Pagina Hormônios</a>
+
+    <!-- VIDEOS EMBEDS -->
+    <div style="display: flexbox; flex-direction: row;flex-wrap: nowrap; height: auto; align-items: center;">
+        <div style="max-width: 400px">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe
+                    src="https://etecspgov-my.sharepoint.com/personal/igor_silva816_etec_sp_gov_br/_layouts/15/embed.aspx?UniqueId=d46ec47e-8256-4299-958f-9d57c1d9bdfe&embed=%7B%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+                    width="853" height="480" frameborder="0" scrolling="no" allowfullscreen title="202311071951.mp4"
+                    style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe>
             </div>
-            <select name="idioma" id="idiomas">
-                <option value="pt-br">Português</option>
-                <option value="en">Inglês</option>
-                <option value="es">Espanhol</option>
-                <option value="fr">Francês</option>
-            </select>
-            <div id="termos">
-                <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
+        </div>
+        <div style="max-width: 400px">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe
+                    src="https://etecspgov-my.sharepoint.com/personal/igor_silva816_etec_sp_gov_br/_layouts/15/embed.aspx?UniqueId=9334367a-6c97-49fd-9aac-e30562fb4a81&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+                    width="853" height="480" frameborder="0" scrolling="no" allowfullscreen title="psicóloga.mp4"
+                    style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div style="max-width: 400px">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe
+                    src="https://etecspgov-my.sharepoint.com/personal/igor_silva816_etec_sp_gov_br/_layouts/15/embed.aspx?UniqueId=9a662bde-2a68-4b98-99e5-21aed1702829&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+                    width="853" height="480" frameborder="0" scrolling="no" allowfullscreen
+                    title="lv_0_20231107080000.mp4"
+                    style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="logo-sections">
+            <img src="./src/logo/logo.svg" alt="">
+            <div id="footer-sections">
+                <a href="#">Artigos</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Atualizações</a>
+                <a href="#">Entre em contato</a>
+                <a href="#">Seja um patrocinador</a>
+                <a href="#">Instale nosso aplicativo</a>
+            </div>
+        </div>
+        <select name="idioma" id="idiomas">
+            <option value="pt-br">Português</option>
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Francês</option>
+        </select>
+        <div id="termos">
+            <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 3,
+                spaceBetween: -300, // Ajuste este valor conforme necessário
+                //centeredSlides: true, // Centraliza os slides
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });                                  
+    </script>
+</body>
+
 </html>
