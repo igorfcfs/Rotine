@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
-font-family: 'Manrope',
+/* font-family: 'Manrope',
 sans-serif;
 font-family: 'Open Sans',
 sans-serif;
 font-family: 'Poppins',
-sans-serif;
+sans-serif; */
 
 :root {
     --cor-ativo: #00A789;
@@ -840,4 +840,38 @@ article ul {
 
 .link-arquivos {
     font-size: 1rem;
+}
+
+
+
+
+.documentos{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-bottom: 5rem;    
+}
+
+.documentos ol {
+    text-decoration: underline;
+    color: blue;
+    font-size: 1rem;
+}
+
+.documentos h2{
+    color: var(--cor-ativo);
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.video{
+    margin-bottom: 10rem;
+    margin-left: 40%;
+}
+
+.videos h2{
+    color: var(--cor-ativo);
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
